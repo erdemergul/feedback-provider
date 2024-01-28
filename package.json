@@ -49,5 +49,18 @@
   },
   "files": [
     "dist"
+  ],
+  "homepage": "https://feedbackclub.app",
+  "keywords": [
+    "feedback",
+    "feed",
+    "club",
+    "feedbackclub",
+    "provider",
+    "feedbackprovider",
+    "react",
+    "react-component",
+    "reactjs",
+    "user-experience"
   ]
 }

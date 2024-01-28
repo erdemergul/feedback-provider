@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'feedback-provider'
+import FeedbackProvider from 'feedback-provider'
 import 'feedback-provider/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <FeedbackProvider text="Feedback provider component 😄" />
 }
 
 export default App
