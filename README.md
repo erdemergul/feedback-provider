@@ -1,6 +1,6 @@
 # feedback-provider
 
-> A react component to get free feedback over feedbackclub.app. Hello world
+> A react component to get free feedback over feedbackclub.app. Hello world 2
 
 [![NPM](https://img.shields.io/npm/v/feedback-provider.svg)](https://www.npmjs.com/package/feedback-provider) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
