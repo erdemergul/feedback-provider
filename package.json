@@ -45,7 +45,9 @@
     "prettier": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.1",
+    "react-transition-group": "^2.2.1",
+    "qrcode.react": "^3.0.2"
   },
   "files": [
     "dist"
