@@ -1,0 +1,110 @@
+.modal_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    width: 300px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Adjust the height as needed */
+    margin-top: -150px;
+    /* Half of the height */
+    margin-left: -150px;
+    /* Half of the width */
+    z-index: 999999;
+    background-color: rgba(35, 45, 53, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_transition_enter {}
+
+.modal_transition_enter_active {
+    position: fixed;
+    transform: scale(1);
+    opacity: 0;
+    animation: scaleUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+.modal_transition_exit {}
+
+.modal_transition_exit_active {
+    position: fixed;
+    animation: scaleDown .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+.backdop_transition_enter {}
+
+.backdop_transition_enter_active {
+    transform: scale(1);
+    animation: fadeIn .5s ease-in forwards;
+}
+
+.backdop_transition_exit {
+    backdrop-filter: none;
+}
+
+.backdop_transition_exit_active {
+    animation: quickScaleDown 0s .5s linear forwards;
+    animation: fadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        background: rgba(0, 0, 0, .0);
+    }
+
+    100% {
+        background: rgba(0, 0, 0, .3);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        background: rgba(0, 0, 0, .3);
+    }
+
+    100% {
+        background: rgba(0, 0, 0, .0);
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(.8) translateY(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleDown {
+    0% {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(.8) translateY(1000px);
+        opacity: 0;
+    }
+}
+
+@keyframes quickScaleDown {
+    0% {
+        transform: scale(1);
+    }
+
+    99.9% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
